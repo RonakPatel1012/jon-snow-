@@ -1,0 +1,137 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+  /* font-size: 10px; */
+  line-height: normal;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+
+@font-face {
+  font-family: 'SansSerifFont';
+  src: url('YoungSerif-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Serifont';
+  src: url('YoungSerif-Regular.ttf');
+}
+
+body {
+  font-family: 'SerifFont', serif;
+  font-size: 10px;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'SansSerifFont', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+h2, h3 {
+  font-size: 1.25rem;
+  letter-spacing: 0.5px;
+}
+
+p {
+  line-height: 1.6;
+  letter-spacing: 0.3px;
+  word-spacing: 2px;
+}
+
+section p:first-of-type {
+  text-indent: 17px;
+}
+
+a, a:visited, a:focus{
+  color: #a66;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+a:focus{
+  outline: none;
+}
+
+a:active{
+  color: #e76f6f;
+}
+
+
+ul, ol{
+  margin: 10px 0;
+  line-height: 1.7;
+  list-style: square;
+}
+
+nav ul{
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  border: 1.3px solid #e9b1b1;
+  display: block;;
+  padding: 10px;
+  text-align: center;
+  margin: 13px;
+  font-size: 16px;
+}
+
+nav ul li a {
+  display: block;
+  color: #a66;
+  text-decoration: none;
+  padding: 10px;
+}
+
+section p a::after{
+  content: url(external-link-edited.png);
+  margin-right: 0 5px;
+}
